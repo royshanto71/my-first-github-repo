@@ -11,3 +11,7 @@ h2 {
 ul {
     list-style-type: square;
 }
+*{
+    margin: 23px;
+    padding: 10px;
+}
