@@ -3,58 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First GitHub Repo</title>
+    <title>CSS Challenges</title>
+    <link rel="stylesheet" href="styles/blog.css"> <!-- External CSS -->
     <style>
+        /* Internal CSS */
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
         }
-        h1 {
-            color: #333;
+        .highlight {
+            color: blue;
+            font-weight: bold;
         }
-        p {
-            color: #555;
+        #main-heading {
+            text-align: center;
+            font-size: 2.5em;
+            font-style: italic;
         }
-        ul {
-            list-style-type: square;
-        }
-        .getting-started {
-            background-color: #e0f7fa;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        footer {
-            margin-top: 20px;
-            font-size: 0.8em;
-            color: #777;
+        .section {
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My First GitHub Repo</h1>
-    <p>This is a simple HTML document.</p>
-    <ul>
+
+    <h1 id="main-heading">CSS Challenges</h1> <!-- Heading with ID selector -->
+
+    <div class="section" style="background-color: lightblue;"> <!-- Inline CSS -->
+        <p>This is the first paragraph styled with inline CSS.</p>
+    </div>
+
+    <div class="section" style="background-color: lightgreen;">
+        <p class="highlight">This is the second paragraph styled with internal CSS.</p> <!-- Class selector -->
+    </div>
+
+    <div class="section" style="background-color: lightcoral;">
+        <p>This is the third paragraph styled with internal CSS.</p>
+    </div>
+
+    <h2>Text Styling</h2>
+    <p style="color: red; text-align: center; font-size: 1.2em;">This paragraph has red text, centered alignment, and increased font size.</p>
+    
+    <ul style="font-family: 'Courier New', Courier, monospace;">
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
     </ul>
-    <p>This repository is a demonstration of using Git and GitHub for version control.</p>
-    <p>It includes basic HTML content and a simple structure.</p>
-    <p>Feel free to explore and contribute!</p>
-    <br>
 
-    <h2>Getting Started</h2>
-    <div class="getting-started">
-        <p>To get started with this project, clone the repository and open it in your favorite code editor.</p>
-        <p>Make sure to install the necessary dependencies if any are specified in a package manager file.</p>
-        <ol>
-            <li>Install Node.js and npm</li>
-            <li>Run <code>npm install</code> to install dependencies</li>
-        </ol>
+    <h2>Selectors Challenge</h2>
+    <div class="section" style="background-color: lightyellow;">
+        <h3>Heading in a div</h3>
+        <p>This is a paragraph inside a div.</p>
     </div>
-    <footer>
-        <p>Created by Roy Shanto</p>
-    </footer>
+
+    <h2>Background Styling Challenge</h2>
+    <div class="section" style="background-image: url('https://via.placeholder.com/150'); background-size: cover;">
+        <p>This section has a background image.</p>
+    </div>
+
+    <h2>Border Styling Challenge</h2>
+    <div class="section" style="border: 5px solid green;">
+        <p>This div has a green border.</p>
+    </div>
+
+    <h2>Display Property Challenge</h2>
+    <div style="display: none;">
+        <p>This paragraph is hidden using display: none.</p>
+    </div>
+    <div style="display: inline;">
+        <p>This paragraph is displayed inline.</p>
+    </div>
+    <div style="display: block;">
+        <p>This paragraph is displayed as a block.</p>
+    </div>
+    <div style="display: inline-block;">
+        <p>This paragraph is displayed as inline-block.</p>
+    </div>
+
 </body>
 </html>
